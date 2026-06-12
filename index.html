@@ -10,45 +10,77 @@
 
     <style>
         body{
-            background-color:#f8f9fa;
-        }
+    background-color:#2f3437;
+    color: white;
+}
 
-        .hero{
-            padding:100px 20px;
-            text-align:center;
-        }
+.hero{
+    padding:100px 20px;
+}
 
-        .hero h1{
-            font-size:3rem;
-            font-weight:bold;
-        }
-                                    
-        .hero p{
-            font-size:1.2rem;
-        }
-    </style>
+.btn-outline-light:hover{
+    color:#2f3437;
+}
+        
 </head>
 
 <body>
+<!-- Hero Section -->
+<section class="hero d-flex align-items-center min-vh-100">
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Hello, I'm Bernice</h1>
+    <div class="container">
 
-            <p class="lead">
-                Research Assistant | Aspiring Bioinformatician | Data Science Enthusiast
-            </p>
+        <div class="row align-items-center">
 
-            <p>
-                Passionate about contributing to pathogen genomics and global infectious disease control using data science, bioinformatics, and computational tools to solve real-world health data challenges.
-            </p>
+            <!-- Text Content -->
+            <div class="col-lg-7">
 
-            <a href="#about" class="btn btn-primary">
-                Learn More
-            </a>
+                <h1 class="display-3 fw-bold">
+                    Bernice Fumilayor Sawyerr
+                </h1>
+
+                <h3 class="mb-4">
+                    Research Assistant | Aspiring Bioinformatician |
+                    Genomics & Data Science Enthusiast
+                </h3>
+
+                <p class="lead">
+                    A biomedical sciences graduate passionate about
+                    bioinformatics, pathogen genomics, infectious disease
+                    research, and reproducible computational workflows.
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="#projects" class="btn btn-light btn-lg me-2">
+                        View Projects
+                    </a>
+
+                    <a href="assets/cv/Bernice_Sawyerr_CV.pdf"
+                       class="btn btn-outline-light btn-lg"
+                       target="_blank">
+                        Download CV
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Profile Photo -->
+            <div class="col-lg-5 text-center">
+
+                <img src="assets/images/profile.jpg"
+                     alt="Bernice Fumilayor Sawyerr"
+                     class="img-fluid rounded-circle shadow"
+                     width="350">
+
+            </div>
+
         </div>
-    </section>
+
+    </div>
+
+</section>
 
     <!-- About Section -->
 <section id="about" class="py-5 bg-white">
