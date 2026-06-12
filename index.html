@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,120 +10,131 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        body{
-    background-color:#2f3437;
-    color: white;
-}
+        body {
+            background-color: #2f3437;
+            color: white;
+            padding-top: 70px; /* for navbar spacing (safe even if navbar added later) */
+        }
 
-.hero{
-    padding:100px 20px;
-}
+        .hero {
+            padding: 100px 20px;
+        }
 
-.btn-outline-light:hover{
-    color:#2f3437;
-}
-        
+        .btn-outline-light:hover {
+            color: #2f3437;
+        }
+
+        /* About section override for readability */
+        #about {
+            color: #000;
+        }
+    </style>
 </head>
 
 <body>
-<!-- Hero Section -->
-<section class="hero d-flex align-items-center min-vh-100">
 
-    <div class="container">
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center min-vh-100" id="home">
 
-        <div class="row align-items-center">
+        <div class="container">
 
-            <!-- Text Content -->
-            <div class="col-lg-7">
+            <div class="row align-items-center">
 
-                <h1 class="display-3 fw-bold">
-                    Bernice Fumilayor Sawyerr
-                </h1>
+                <!-- Text Content -->
+                <div class="col-lg-7">
 
-                <h3 class="mb-4">
-                    Research Assistant | Aspiring Bioinformatician |
-                    Genomics & Data Science Enthusiast
-                </h3>
+                    <h1 class="display-3 fw-bold">
+                        Bernice Fumilayor Sawyerr
+                    </h1>
 
-                <p class="lead">
-                    A biomedical sciences graduate passionate about
-                    bioinformatics, pathogen genomics, infectious disease
-                    research, and reproducible computational workflows.
-                </p>
+                    <h3 class="mb-4">
+                        Research Assistant | Aspiring Bioinformatician | Genomics & Data Science Enthusiast
+                    </h3>
 
-                <div class="mt-4">
+                    <p class="lead">
+                        A biomedical sciences graduate passionate about bioinformatics, pathogen genomics, infectious disease research, and reproducible computational workflows.
+                    </p>
 
-                    <a href="#projects" class="btn btn-light btn-lg me-2">
-                        View Projects
-                    </a>
+                    <div class="mt-4">
 
-                    <a href="assets/cv/Bernice_Sawyerr_CV.pdf"
-                       class="btn btn-outline-light btn-lg"
-                       target="_blank">
-                        Download CV
-                    </a>
+                        <a href="#about" class="btn btn-light btn-lg me-2">
+                            Learn More
+                        </a>
+
+                        <a href="assets/cv/Bernice_Sawyerr_CV.pdf"
+                           class="btn btn-outline-light btn-lg"
+                           target="_blank">
+                            Download CV
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Profile Photo -->
+                <div class="col-lg-5 text-center">
+
+                    <img src="assets/images/profile.jpg"
+                         alt="Bernice Fumilayor Sawyerr"
+                         class="img-fluid rounded-circle shadow"
+                         width="350">
 
                 </div>
 
             </div>
 
-            <!-- Profile Photo -->
-            <div class="col-lg-5 text-center">
-
-                <img src="assets/images/profile.jpg"
-                     alt="Bernice Fumilayor Sawyerr"
-                     class="img-fluid rounded-circle shadow"
-                     width="350">
-
-            </div>
-
         </div>
 
-    </div>
-
-</section>
+    </section>
 
     <!-- About Section -->
-<section id="about" class="py-5 bg-white">
-    <div class="container">
+    <section id="about" class="py-5 bg-white">
 
-        <div class="row align-items-center">
+        <div class="container">
 
-            <!-- Text Column -->
-            <div class="col-md-6">
-                <h2 class="mb-4">About Me</h2>
+            <div class="row align-items-center">
 
-                <p>
-                    I am a Research Assistant at Noguchi Memorial Institute for Medical Research with a strong interest in bioinformatics, genomics, and data-driven approaches to infectious disease research.
-                </p>
+                <!-- Text Column -->
+                <div class="col-md-6">
 
-                <p>
-                    My work focuses on analyzing genomic data, building reproducible workflows, and using computational tools to understand pathogen evolution and transmission.
-                </p>
+                    <h2 class="mb-4">About Me</h2>
 
-                <p>
-                    I enjoy learning new technologies such as Nextflow, R, and Python to improve my research and analytical skills.
-                </p>
-            </div>
+                    <p>
+                        I am a Research Assistant at Noguchi Memorial Institute for Medical Research with a strong interest in bioinformatics, genomics, and data-driven approaches to infectious disease research.
+                    </p>
 
-            <!-- Image/Visual Column -->
-            <div class="col-md-6 text-center">
-                <div class="p-4 border rounded shadow-sm">
-                    <h5>Quick Snapshot</h5>
-                    <p>🧬 Bioinformatics Enthusiast</p>
-                    <p>📊 Data Science Learner</p>
-                    <p>🧪 Genomics Research Focus</p>
-                    <p>💻 Workflow Development</p>
+                    <p>
+                        My work focuses on analyzing genomic data, building reproducible workflows, and using computational tools to understand pathogen evolution and transmission.
+                    </p>
+
+                    <p>
+                        I enjoy learning new technologies such as Nextflow, R, and Python to improve my research and analytical skills.
+                    </p>
+
                 </div>
+
+                <!-- Snapshot Box -->
+                <div class="col-md-6 text-center">
+
+                    <div class="p-4 border rounded shadow-sm bg-light text-dark">
+
+                        <h5>Quick Snapshot</h5>
+
+                        <p>🧬 Bioinformatics Enthusiast</p>
+                        <p>📊 Data Science Learner</p>
+                        <p>🧪 Genomics Research Focus</p>
+                        <p>💻 Workflow Development</p>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
-    </div>
-</section>
+    </section>
 
-
-
-    
 </body>
+
 </html>
