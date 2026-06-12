@@ -14,4 +14,4 @@ GitHub
 This portfolio is being developed to document my professional journey and highlight projects related to data science, genomics, and bioinformatics. 
 
 # Status
-Currently under development
+Portfolio website under development.
